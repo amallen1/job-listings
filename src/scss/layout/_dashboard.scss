@@ -1,0 +1,27 @@
+@import '../base/global';
+
+//Dashboard
+.job-list {
+    // border: 1px solid red;
+
+    width: 90%;
+    margin: 3em auto;
+}
+
+.job-container {
+
+    background-color: white;
+    box-shadow: 0px 17px 7px -10px hsla(180, 29%, 50%, 0.5);
+    margin-bottom: 2em;
+    border-radius: 5px;
+
+}
+
+// $desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+// Neutral colors
+//-----------------------------
+// $light-grayish-cyan: hsl(180, 52%, 96%); //background
+// $light-grayish-cyan: hsl(180, 31%, 95%); //filter tablets
+// $dark-grayish-cyan: hsl(180, 8%, 52%);
+// $very-dark-grayish-cyan: hsl(180, 14%, 20%);
