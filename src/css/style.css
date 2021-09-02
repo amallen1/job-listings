@@ -47,13 +47,120 @@ body {
   box-shadow: 0px 17px 7px -10px rgba(91, 164, 164, 0.5);
   margin-bottom: 2em;
   border-radius: 5px;
+  padding: 2.5em 1em 1em;
+  position: relative;
+  border-left: 4px solid #5ba4a4;
+}
+.job-container .company-image {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  top: -20px;
+  left: 20px;
+}
+.job-container .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.job-container .card-header > * {
+  margin-right: 1em;
+}
+.job-container .company-name {
+  color: #5ba4a4;
+}
+.job-container .new {
+  background-color: #5ba4a4;
+  color: #fff;
+}
+.job-container .featured {
+  background-color: #000;
+  color: #fff;
+}
+.job-container .new,
+.job-container .featured {
+  border-radius: 15px;
+  font-size: 0.8em;
+  padding: 0.5em 0.5em 0.25em;
+}
+.job-container .job-position {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.job-container .job-position:hover {
+  color: #5ba4a4;
+  cursor: pointer;
+}
+.job-container .job-info {
+  display: flex;
+  margin-bottom: 1.5em;
+  color: #7b8e8e;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.job-container .job-info > :nth-child(1) {
+  list-style-type: none;
+}
+.job-container .job-info li {
+  font-size: 0.875em;
+  margin-right: 1.75em;
+}
+.job-container .extra {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.job-container .extra p {
+  background-color: #eef6f6;
+  font-size: 0.875em;
+  margin-right: 1em;
+  padding: 0.5em 0.5em 0.25em;
+  border-radius: 5px;
+  color: #5ba4a4;
+  font-weight: 700;
+  row-gap: 1em;
+  margin-bottom: 1em;
+}
+.job-container .extra p:hover {
+  background-color: #5ba4a4;
+  color: #fff;
+  cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .job-list {
+    width: 80%;
+  }
+
+  .job-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .job-container .job-info {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .job-container .company-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin: 0 1.5em;
+  }
+  .job-container .left {
+    display: flex;
+  }
+  .job-container .extra {
+    margin: 0;
+  }
+}
 .header {
   background-color: aqua;
   height: 175px;
   background-color: #5ba4a4;
-  background-image: url("./../images/bg-header-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
