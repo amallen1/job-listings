@@ -53,6 +53,34 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.search-bar .search-element {
+  display: flex;
+  align-items: center;
+}
+.search-bar span {
+  background-color: #eef6f6;
+  font-size: 0.875em;
+  padding: 0.5em 0.5em 0.25em;
+  border-radius: 5px 0px 0px 5px;
+  color: #5ba4a4;
+  font-weight: 700;
+}
+.search-bar button {
+  background-image: url("../images/icon-remove.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #5ba4a4;
+  width: 100%;
+  height: auto;
+  padding: 0.23em 0.75em 0.23em;
+  border: none;
+  border-radius: 0 5px 5px 0px;
+  cursor: pointer;
+}
+.search-bar .remove-icon {
+  height: auto;
+  max-width: 100%;
+}
 
 .clear-btn {
   color: #5ba4a4;
@@ -104,11 +132,13 @@ body {
   background-color: #000;
   color: #fff;
 }
-.job-container .new,
-.job-container .featured {
+.job-container span {
   border-radius: 15px;
   font-size: 0.8em;
   padding: 0.5em 0.5em 0.25em;
+}
+.job-container span:empty {
+  padding: 0;
 }
 .job-container .job-position {
   font-weight: 700;
@@ -184,6 +214,7 @@ body {
   }
   .job-container .left {
     display: flex;
+    margin-right: 1em;
   }
   .job-container .extra {
     margin: 0;

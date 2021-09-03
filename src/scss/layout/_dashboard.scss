@@ -47,11 +47,15 @@
     color: #fff;
   }
 
-  .new,
-  .featured {
+  span {
     border-radius: 15px;
     font-size: 0.8em;
     padding: 0.5em 0.5em 0.25em;
+
+    //helps the new and featured tags to not display for all job listings
+    &:empty {
+      padding: 0;
+    }
   }
 
   .job-position {
@@ -84,7 +88,7 @@
   .extra {
     margin-top: 1em;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 
     p {
       background-color: $light-grayish-cyan;
@@ -106,12 +110,14 @@
   }
 }
 
+
+
 @media (min-width: 768px) {
-    .header {
-        background-image: url("../images/bg-header-desktop.svg");
-        // background-position: center;
-        background-size: cover;
-    }
+  .header {
+    background-image: url("../images/bg-header-desktop.svg");
+    // background-position: center;
+    background-size: cover;
+  }
   .job-list {
     width: 80%;
   }
@@ -138,6 +144,7 @@
 
     .left {
       display: flex;
+      margin-right: 1em;
     }
 
     .extra {

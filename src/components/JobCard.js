@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import Search from "./Search";
 
-const JobCard = ({ job }) => {
-  const [clicked, setClicked] = useState(false);
+const JobCard = ({ job, clicked }) => {
 
-  const triggerSearch = () => {
-    setClicked(!clicked);
-  };
+  const techStack = [job.role, job.level];
+
+  if (job.languages) {
+    techStack.push(...job.languages);
+  }
+  if (job.tools) {
+    techStack.push(...job.tools);
+  }
 
   return (
     <div className="job-container">
@@ -18,8 +22,8 @@ const JobCard = ({ job }) => {
         <div className="card-info">
           <div className="card-header">
             <h5 className="company-name">{job.company}</h5>
-            <p className="new"> {job.new ? "NEW!" : null}</p>
-            <p className="featured"> {job.featured ? "FEATURED" : null}</p>
+            <span className="new">{job.new && "NEW!"}</span>
+            <span className="featured">{job.featured && "FEATURED"}</span>
           </div>
 
           <div>
@@ -34,29 +38,11 @@ const JobCard = ({ job }) => {
       </div>
 
       <div className="extra">
-        <p onClick={triggerSearch}>
-          {job.role}
-          {clicked ? <Search /> : null}
-        </p>
-
-        <p onClick={triggerSearch}>
-          {job.level}
-          {clicked ? <Search /> : null}
-        </p>
-
-        {job.languages.map((language, index) => (
-          <p key={index} onClick={triggerSearch}>
-            {language}
-            {clicked ? <Search /> : null}
-          </p>
-        ))}
-
-        {job.tools.map((tool, index) => (
-          <p key={index} onClick={triggerSearch}>
-            {tool}
-            {clicked ? <Search /> : null}
-          </p>
-        ))}
+      {/* {console.log(techStack)} */}
+        {techStack
+          ? techStack.map((item,index) => <p key={index} onClick={() => clicked(item)}>{item}</p>)
+          : ""}
+          
       </div>
     </div>
   );

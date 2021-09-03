@@ -12,6 +12,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .search-element {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    background-color: $light-grayish-cyan;
+    font-size: 0.875em;
+    // margin-right: 1em;
+    padding: 0.5em 0.5em 0.25em;
+    border-radius: 5px 0px 0px 5px;
+    color: $desaturated-dark-cyan;
+    font-weight: 700;
+  }
+
+  button {
+    background-image: url("../images/icon-remove.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $desaturated-dark-cyan;
+    width: 100%;
+    height: auto;
+    padding: 0.23em 0.75em 0.23em;
+    border: none;
+    border-radius: 0 5px 5px 0px;
+    cursor: pointer;
+  }
+
+  .remove-icon {
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 .clear-btn {
