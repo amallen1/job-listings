@@ -31,6 +31,33 @@ body {
   background-color: #eef6f6;
 }
 
+.header {
+  height: 175px;
+  background-color: #5ba4a4;
+  background-image: url("../images/bg-header-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-bar {
+  height: 60px;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 150px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 17px 7px -10px rgba(91, 164, 164, 0.5);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  color: #5ba4a4;
+}
+
 body {
   font-family: "Spartan", sans-serif;
   font-size: 15px;
@@ -39,7 +66,7 @@ body {
 
 .job-list {
   width: 90%;
-  margin: 3em auto;
+  margin: 4em auto;
 }
 
 .job-container {
@@ -128,6 +155,11 @@ body {
 }
 
 @media (min-width: 768px) {
+  .header {
+    background-image: url("../images/bg-header-desktop.svg");
+    background-size: cover;
+  }
+
   .job-list {
     width: 80%;
   }
@@ -156,11 +188,8 @@ body {
   .job-container .extra {
     margin: 0;
   }
-}
-.header {
-  background-color: aqua;
-  height: 175px;
-  background-color: #5ba4a4;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  .search-bar {
+    width: 80%;
+  }
 }

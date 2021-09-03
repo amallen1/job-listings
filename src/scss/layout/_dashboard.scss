@@ -3,7 +3,7 @@
 //Dashboard
 .job-list {
   width: 90%;
-  margin: 3em auto;
+  margin: 4em auto;
 }
 
 .job-container {
@@ -84,7 +84,7 @@
   .extra {
     margin-top: 1em;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 
     p {
       background-color: $light-grayish-cyan;
@@ -103,23 +103,15 @@
         cursor: pointer;
       }
     }
-    //background-color: ;
   }
 }
 
-// $desaturated-dark-cyan: hsl(180, 29%, 50%);
-
-// Neutral colors
-//-----------------------------
-// $light-grayish-cyan: hsl(180, 52%, 96%); //background
-// $light-grayish-cyan: hsl(180, 31%, 95%); //filter tablets
-// $dark-grayish-cyan: hsl(180, 8%, 52%);
-// $very-dark-grayish-cyan: hsl(180, 14%, 20%);
-
 @media (min-width: 768px) {
-  //   .header {
-  //       background-image: url("./images/bg-header-desktop.svg");
-  //   }
+    .header {
+        background-image: url("../images/bg-header-desktop.svg");
+        // background-position: center;
+        background-size: cover;
+    }
   .job-list {
     width: 80%;
   }
@@ -151,5 +143,9 @@
     .extra {
       margin: 0;
     }
+  }
+
+  .search-bar {
+    width: 80%;
   }
 }

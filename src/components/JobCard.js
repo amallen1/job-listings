@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Search from "./Search";
 
 const JobCard = ({ job }) => {
+  const [clicked, setClicked] = useState(false);
+
+  const triggerSearch = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <div className="job-container">
       <div className="left">
@@ -27,15 +34,28 @@ const JobCard = ({ job }) => {
       </div>
 
       <div className="extra">
-        <p>{job.role}</p>
-        <p>{job.level}</p>
+        <p onClick={triggerSearch}>
+          {job.role}
+          {clicked ? <Search /> : null}
+        </p>
+
+        <p onClick={triggerSearch}>
+          {job.level}
+          {clicked ? <Search /> : null}
+        </p>
 
         {job.languages.map((language, index) => (
-          <p key={index}>{language} </p>
+          <p key={index} onClick={triggerSearch}>
+            {language}
+            {clicked ? <Search /> : null}
+          </p>
         ))}
 
         {job.tools.map((tool, index) => (
-          <p key={index}>{tool}</p>
+          <p key={index} onClick={triggerSearch}>
+            {tool}
+            {clicked ? <Search /> : null}
+          </p>
         ))}
       </div>
     </div>

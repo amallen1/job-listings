@@ -1,8 +1,8 @@
-@import 'base/reset';
-@import 'base/config';
-@import 'base/global';
+@import "base/reset";
+@import "base/config";
+@import "base/global";
 
-@import 'layout/dashboard';
-@import 'layout/header';
-
+@import "layout/header";
+@import "layout/search";
+@import "layout/dashboard";
 
