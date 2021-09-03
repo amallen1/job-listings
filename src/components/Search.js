@@ -1,20 +1,21 @@
 import React from "react";
+import SearchItem from "./SearchItem";
 
-const Search = ({ close, searchItem }) => {
+const Search = ({ close, searchItem, array }) => {
   return (
     <div className="search-bar">
-
-      <div className="search-element">
-        <span className="keyword">{searchItem}</span>
-        <button className="delete-btn">
-          <img className="remove-icon" src="../images/icon-remove.svg" alt="" />
-        </button>
+      <div className="items">
+        {array.map((item, index) => {
+          return <SearchItem key={index} searchItem={item} />;
+          console.log(typeof item);
+        })}
       </div>
 
-      {/* add categories */}
-      <a className="clear-btn" href="#" onClick={close}>
-        Clear
-      </a>
+      <div className="clear">
+        <a className="clear-btn" href="#" onClick={close}>
+          Clear
+        </a>
+      </div>
     </div>
   );
 };

@@ -53,9 +53,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.search-bar .items {
+  display: flex;
+  flex-wrap: wrap;
+}
 .search-bar .search-element {
   display: flex;
   align-items: center;
+  margin-right: 1em;
 }
 .search-bar span {
   background-color: #eef6f6;
@@ -66,20 +71,17 @@ body {
   font-weight: 700;
 }
 .search-bar button {
+  display: inline-block;
   background-image: url("../images/icon-remove.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #5ba4a4;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 0.23em 0.75em 0.23em;
   border: none;
   border-radius: 0 5px 5px 0px;
   cursor: pointer;
-}
-.search-bar .remove-icon {
-  height: auto;
-  max-width: 100%;
 }
 
 .clear-btn {

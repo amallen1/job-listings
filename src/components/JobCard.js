@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Search from "./Search";
 
 const JobCard = ({ job, clicked }) => {
-
   const techStack = [job.role, job.level];
 
   if (job.languages) {
@@ -38,11 +37,13 @@ const JobCard = ({ job, clicked }) => {
       </div>
 
       <div className="extra">
-      {/* {console.log(techStack)} */}
         {techStack
-          ? techStack.map((item,index) => <p key={index} onClick={() => clicked(item)}>{item}</p>)
+          ? techStack.map((item, index) => (
+              <p key={index} onClick={() => clicked(item)}>
+                {item}
+              </p>
+            ))
           : ""}
-          
       </div>
     </div>
   );
