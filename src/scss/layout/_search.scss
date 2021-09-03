@@ -1,10 +1,7 @@
 .search-bar {
-  height: 60px;
-  width: 90%;
-  margin: 0 auto;
-  position: absolute;
-  top: 150px;
-
+  height: auto;
+  // width: 90%;
+  margin: 2em auto 3.5em;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 17px 7px -10px hsla(180, 29%, 50%, 0.5);
@@ -22,9 +19,10 @@
     display: flex;
     align-items: center;
     margin-right: 1em;
+    margin-bottom: 0.5em;
   }
 
-  span {
+  .keyword {
     background-color: $light-grayish-cyan;
     font-size: 0.875em;
     // margin-right: 1em;
@@ -34,7 +32,7 @@
     font-weight: 700;
   }
 
-  button {
+  .delete-btn {
     display: inline-block;
     background-image: url("../images/icon-remove.svg");
     background-repeat: no-repeat;
@@ -46,11 +44,14 @@
     border: none;
     border-radius: 0 5px 5px 0px;
     cursor: pointer;
-    
-  }
 
+    &:hover {
+      background-color: $very-dark-grayish-cyan;
+    }
+  }
 }
 
 .clear-btn {
   color: $desaturated-dark-cyan;
+  font-weight: 700;
 }

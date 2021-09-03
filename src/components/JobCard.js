@@ -39,9 +39,13 @@ const JobCard = ({ job, clicked }) => {
       <div className="extra">
         {techStack
           ? techStack.map((item, index) => (
-              <p key={index} onClick={() => clicked(item)}>
+              <button
+                className="keywords"
+                key={index}
+                onClick={() => clicked(item)}
+              >
                 {item}
-              </p>
+              </button>
             ))
           : ""}
       </div>

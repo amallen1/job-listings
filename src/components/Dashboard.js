@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import JobCard from "./JobCard";
 import JobData from "../Data/data.json";
 import Search from "./Search";
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
   return (
     <div className="job-list">
-      {clicked ? <Search close={closeSearch} searchItem={searchItem} array={keywordArray}/> : null}
+      {clicked ? <Search close={closeSearch} array={keywordArray} /> : null}
 
       {jobs}
     </div>
