@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Search from "./Search";
+import React from "react";
 
 const JobCard = ({ job, clicked }) => {
   const techStack = [job.role, job.level];
