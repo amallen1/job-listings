@@ -11,7 +11,12 @@ const JobCard = ({ job, clicked }) => {
   }
 
   return (
-    <div className="job-container">
+    <div
+      className="job-container"
+      style={{
+        borderLeft: job.featured && `4px solid hsl(180, 29%, 50%)`,
+      }}
+    >
       <div className="left">
         <div className="logo-div">
           <img className="company-image" src={job.logo} alt="company logo" />
@@ -20,8 +25,8 @@ const JobCard = ({ job, clicked }) => {
         <div className="card-info">
           <div className="card-header">
             <h5 className="company-name">{job.company}</h5>
-            <span className="new">{job.new && "NEW!"}</span>
-            <span className="featured">{job.featured && "FEATURED"}</span>
+            {job.new && <span className="new">NEW</span>}
+            {job.featured && <span className="featured">FEATURED</span>}
           </div>
 
           <div>

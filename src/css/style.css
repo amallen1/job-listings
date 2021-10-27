@@ -40,15 +40,15 @@ body {
 }
 
 .search-bar {
-  height: auto;
-  margin: 2em auto 3.5em;
+  margin: 0em auto;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 17px 7px -10px rgba(91, 164, 164, 0.5);
+  box-shadow: 0px 17px 20px 0px rgba(91, 164, 164, 0.2);
   padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-50px);
 }
 .search-bar .items {
   display: flex;
@@ -103,10 +103,10 @@ body {
 
 .job-container {
   background-color: white;
-  box-shadow: 0px 17px 7px -10px rgba(91, 164, 164, 0.5);
+  box-shadow: 0px 17px 20px 0px rgba(101, 159, 159, 0.2);
   margin-bottom: 2.5em;
   border-radius: 5px;
-  padding: 2.5em 1em 1em;
+  padding: 2.5em 1.5em 1em;
   position: relative;
 }
 .job-container .border-tag {
@@ -127,23 +127,20 @@ body {
 .job-container .card-header > * {
   margin-right: 1em;
 }
-.job-container .company-name {
+.job-container .card-header .company-name {
   color: #5ba4a4;
 }
-.job-container .new {
+.job-container .card-header .new {
   background-color: #5ba4a4;
 }
-.job-container .featured {
+.job-container .card-header .featured {
   background-color: #000;
 }
-.job-container span {
+.job-container .card-header span {
   border-radius: 15px;
   font-size: 0.8em;
   padding: 0.5em 0.5em 0.25em;
   color: #fff;
-}
-.job-container span:empty {
-  padding: 0;
 }
 .job-container .job-position {
   font-weight: 700;
@@ -176,7 +173,7 @@ body {
   background-color: #eef6f6;
   font-size: 0.875em;
   margin-right: 1em;
-  padding: 0.5em 0.5em 0.25em;
+  padding: 0.75em 0.5em 0.5em;
   border-radius: 5px;
   color: #5ba4a4;
   font-weight: 700;
@@ -204,11 +201,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5em;
   }
   .job-container .job-info {
     border: none;
     margin: 0;
-    padding: 0;
   }
   .job-container .company-image {
     position: relative;
@@ -224,9 +221,5 @@ body {
   }
   .job-container .extra {
     margin: 0;
-  }
-
-  .search-bar {
-    width: 80%;
   }
 }
