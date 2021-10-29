@@ -1,5 +1,9 @@
 # Frontend Mentor - Job listings with filtering solution
 
+![Design preview for the Job listings with filtering challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋
+
 This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). 
 
 ## Table of contents
@@ -25,6 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
+| Mobile (375px)                                 | Desktop (1440px)                                 |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Mobile](./screenshots/mobile_screenshot.png) | ![Desktop](./screenshots/desktop_screenshot.png) |
+
 ### Links
 
 - Solution URL: [Code](https://github.com/amallen1/job-listings)
@@ -35,7 +43,7 @@ Users should be able to:
 ### Built with
 
 - HTML
-- Sass
+- Scss
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
