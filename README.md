@@ -1,6 +1,6 @@
 # Frontend Mentor - Job listings with filtering solution
 
-This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). 
 
 ## Table of contents
 
@@ -11,10 +11,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-
 
 ## Overview
 
@@ -28,7 +25,6 @@ Users should be able to:
 
 ### Screenshot
 
-
 ### Links
 
 - Solution URL: [Code](https://github.com/amallen1/job-listings)
@@ -38,29 +34,15 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- SASS
-- Flexbox
-- CSS Grid
+- HTML
+- Sass
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
 
-
-### Continued development
-
---
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+I used previous knowledge gained from past projects to implement this solution.
 
 ## Author
 
 - Frontend Mentor - [@amallen1](https://www.frontendmentor.io/profile/amallen1)
-
-

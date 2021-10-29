@@ -54,4 +54,22 @@
 .clear-btn {
   color: $desaturated-dark-cyan;
   font-weight: 700;
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $desaturated-dark-cyan;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.3s;
+    width: 0%;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }

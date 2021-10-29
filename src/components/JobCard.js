@@ -1,11 +1,12 @@
 import React from "react";
 
-const JobCard = ({ job, clicked }) => {
+const JobCard = ({ job, startSearch }) => {
   const techStack = [job.role, job.level];
 
   if (job.languages) {
     techStack.push(...job.languages);
   }
+
   if (job.tools) {
     techStack.push(...job.tools);
   }
@@ -40,13 +41,13 @@ const JobCard = ({ job, clicked }) => {
         </div>
       </div>
 
-      <div className="extra">
+      <div className="right">
         {techStack
           ? techStack.map((item, index) => (
               <button
                 className="keywords"
                 key={index}
-                onClick={() => clicked(item)}
+                onClick={() => startSearch(item)}
               >
                 {item}
               </button>

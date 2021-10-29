@@ -1,11 +1,11 @@
 import React from "react";
 import SearchItem from "./SearchItem";
 
-const Search = ({ close, array, deleteKeyword }) => {
+const Search = ({ close, keywords, deleteKeyword }) => {
   return (
     <div className="search-bar">
       <div className="items">
-        {array.map((item, index) => {
+        {keywords.map((item, index) => {
           return (
             <SearchItem
               key={index}
@@ -17,9 +17,9 @@ const Search = ({ close, array, deleteKeyword }) => {
       </div>
 
       <div className="clear">
-        <a className="clear-btn" href="#" onClick={close}>
+        <button className="clear-btn" onClick={close}>
           Clear
-        </a>
+        </button>
       </div>
     </div>
   );
